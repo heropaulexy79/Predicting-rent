@@ -27,8 +27,8 @@ def main():
   Title = st.selectbox("Title", X_train["Title"].unique())
   NewlyBuilt = st.checkbox("Newly Built")
   Furnished = st.checkbox("Furnished")
-  Bedrooms = st.number_input("Bedrooms", min_value=1, max_value=10)
-  Toilets = st.number_input("Toilets", min_value=1, max_value=10)
+  Bedrooms = st.number_input("Bedrooms", min_value=1, max_value=15)
+  Toilets = st.number_input("Toilets", min_value=1, max_value=15)
   City = st.selectbox("City", X_train["City"].unique())
 
   # Make prediction
